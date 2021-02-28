@@ -1,0 +1,36 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: var(--white);
+  height: 100vh;
+  width: 80px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar header img {
+  width: 70px;
+  height: 70px;
+}
+
+.navbar .icons {
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons button {
+  border: none;
+  background: transparent;
+}
+
+.navbar .icons > button {
+  margin-bottom: 1rem;
+}

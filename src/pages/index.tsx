@@ -8,6 +8,7 @@ import styles from '../styles/pages/Home.module.css';
 import Head from 'next/head';
 import { CountdownProvider } from '../contexts/CountdownContext';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
+import { Navbar } from '../components/Navbar';
 
 export default function Home(props) {
   return (
@@ -18,9 +19,10 @@ export default function Home(props) {
     >
       <div className={styles.container}>
         <Head>
-          <title>Início | MoveIt</title>
+          <title>Início | Fokus</title>
         </Head>
 
+        <Navbar />
         <ExperienceBar />
 
         <CountdownProvider>
